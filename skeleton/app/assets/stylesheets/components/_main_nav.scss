@@ -1,0 +1,88 @@
+.main-nav {
+  margin-top: 25px;
+  grid-column: 10 / 55;
+  grid-row: 5 / 9;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: $sans-serif;
+  font-weight: bold;
+  align-items: center;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+
+}
+
+.left-nav {
+  display: inline;
+  > ul {
+    display: flex;
+    gap: 30px;
+    > li {
+      display: flex;
+    }
+  }
+
+  span {
+    padding: 0 5px;
+    position: relative;
+    bottom: 2px;
+
+  }
+}
+
+.right-nav  {
+  display: inline;
+  > ul {
+    display: flex;
+    gap: 30px;
+    > li {
+      display: flex;
+    }
+
+    > li:last-of-type {
+      font-size: 15px;
+    }
+
+    > li:last-of-type:hover {
+      color: $light-gray;
+      cursor: pointer;
+    }
+  }
+  
+  i {
+
+  }
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+
+}
+
+#sections-sidebar-btn:hover, #search-modal-btn:hover {
+  color: $gray;
+  cursor: pointer;
+}
+
+#sections-subscribe-btn, #log-in-btn {
+  position: relative;
+  bottom: 5px;
+  background: $light-blue;
+  border: 5px solid $light-blue;
+  border-radius: 5px;
+  padding: 0 5px;
+  a {
+    background: inherit;
+    color: $lightest-gray;
+  }
+  &:hover {
+    background: $darkest-blue;
+    border: 5px solid $darkest-blue;
+    cursor: pointer;
+  }
+}
+
+
